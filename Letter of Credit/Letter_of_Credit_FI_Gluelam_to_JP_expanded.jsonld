@@ -1,0 +1,470 @@
+{
+  "@context": {
+    "dcap": "http://purl.org/ws-mmi-dc/terms/",
+    "suomi-meta": "https://iri.suomi.fi/model/suomi-meta/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dsilc": "https://iri.suomi.fi/model/dsilc/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "ktddecv": "https://iri.suomi.fi/model/ktddecv/0.0.4/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "http": "http://www.w3.org/2011/http#"
+  },
+  "@id": "urn:uuid:afecccec-8644-4a1c-b256-17592ced3248",
+  "@type": "ktddecv:DocumentaryCredit",
+  "ktddecv:creditIdentifier": "LC-2025-000123",
+  "ktddecv:documentDate": "2025-09-30",
+  "ktddecv:expiryDate": "2025-11-15",
+  "ktddecv:placeOfPresentation": {
+    "@type": "ktddecv:Location",
+    "ktddecv:description": "MUFG Bank, Nihonbashi Branch",
+    "ktddecv:locationCountry": {
+      "@type": "ktddecv:Country",
+      "ktddecv:countryCode": "JP"
+    },
+    "ktddecv:alternateName": "Tokyo"
+  },
+  "ktddecv:presentationPeriodDays": 21,
+  "ktddecv:currencyCode": "JPY",
+  "ktddecv:maximumCreditAmount": {
+    "@type": "ktddecv:MonetaryAmount",
+    "ktddecv:amount": 58400000,
+    "ktddecv:currencyCode": "JPY"
+  },
+  "ktddecv:transshipmentAllowed": true,
+  "ktddecv:tenorPeriod": "Sight",
+  "ktddecv:hasAvailabilityMethod": {
+    "@type": "ktddecv:AvailabilityMethod",
+    "ktddecv:availabilityMethodCode": "BY_PAYMENT_AT_SIGHT"
+  },
+  "ktddecv:hasCreditAvailability": {
+    "@type": "ktddecv:CreditAvailability",
+    "ktddecv:availableWith": "MUFG Bank, Ltd. (BOTKJPJT)",
+    "ktddecv:availableBy": "Payment",
+    "ktddecv:availableAtPlace": "Tokyo, Japan",
+    "ktddecv:maturityDate": "2025-11-21"
+  },
+  "ktddecv:issuingBankParty": {
+    "@type": "ktddecv:Party",
+    "ktddecv:name": "MUFG Bank, Ltd.",
+    "ktddecv:partyIdentification": [
+      {
+        "@type": "ktddecv:Identifier",
+        "ktddecv:identificationScheme": "BIC",
+        "ktddecv:identifierValue": "BOTKJPJT"
+      }
+    ]
+  },
+  "ktddecv:advisingBankParty": {
+    "@type": "ktddecv:Party",
+    "ktddecv:name": "Nordea Bank Abp",
+    "ktddecv:partyIdentification": [
+      {
+        "@type": "ktddecv:Identifier",
+        "ktddecv:identificationScheme": "BIC",
+        "ktddecv:identifierValue": "NDEAFIHH"
+      }
+    ]
+  },
+  "ktddecv:applicantParty": {
+    "@type": "ktddecv:Party",
+    "ktddecv:name": "Tokyo Timber Trading Co., Ltd.",
+    "ktddecv:partyAddress": {
+      "@type": "ktddecv:Address",
+      "ktddecv:cityName": "Chiyoda-ku",
+      "ktddecv:countryCode": "JP",
+      "ktddecv:postalZone": "100-0001",
+      "ktddecv:lineOne": "1-1 Marunouchi"
+    },
+    "ktddecv:partyIdentification": [
+      {
+        "@type": "ktddecv:Identifier",
+        "ktddecv:identificationScheme": "CorporateNumber",
+        "ktddecv:identifierValue": "0123456789012"
+      }
+    ]
+  },
+  "ktddecv:beneficiaryParty": {
+    "@type": "ktddecv:Party",
+    "ktddecv:name": "FinnLam Oy",
+    "ktddecv:partyAddress": {
+      "@type": "ktddecv:Address",
+      "ktddecv:cityName": "Helsinki",
+      "ktddecv:countryCode": "FI",
+      "ktddecv:postalZone": "00180",
+      "ktddecv:lineOne": "Satamatie 12"
+    },
+    "ktddecv:partyIdentification": [
+      {
+        "@type": "ktddecv:Identifier",
+        "ktddecv:identificationScheme": "BusinessID",
+        "ktddecv:identifierValue": "1234567-8"
+      },
+      {
+        "@type": "ktddecv:Identifier",
+        "ktddecv:identificationScheme": "VAT",
+        "ktddecv:identifierValue": "FI12345678"
+      }
+    ]
+  },
+  "ktddecv:hasShipment": [
+    {
+      "@type": "ktddecv:Shipment",
+      "ktddecv:contractNumber": "CN-2025-GLULAM-045",
+      "ktddecv:latestShipmentDate": "2025-10-31",
+      "ktddecv:placeOfReceiptUNLocode": [
+        "FIHEL"
+      ],
+      "ktddecv:portOfLoadingUNLocode": [
+        "FIHEL"
+      ],
+      "ktddecv:portOfDischargeUNLocode": [
+        "JPYOK"
+      ],
+      "ktddecv:finalDestinationUNLocode": [
+        "JPTYO"
+      ],
+      "ktddecv:placeOfDeliveryUNLocode": [
+        "JPTYO"
+      ],
+      "ktddecv:transportModeCode": "1",
+      "ktddecv:transportMeans": "40'HC containers",
+      "ktddecv:shippingMarks": "FINNLAM / TOKYO TIMBER / MADE IN FINLAND",
+      "ktddecv:incotermsLocation": "Yokohama, JP",
+      "ktddecv:grossMassMeasure": {
+        "@type": "ktddecv:Measure",
+        "ktddecv:value": 80000,
+        "ktddecv:unitCode": "KGM"
+      },
+      "ktddecv:netMassMeasure": {
+        "@type": "ktddecv:Measure",
+        "ktddecv:value": 76000,
+        "ktddecv:unitCode": "KGM"
+      },
+      "ktddecv:totalPackageQuantity": 4,
+      "ktddecv:packageTypeCode": "4H2",
+      "ktddecv:shipmentIdentifier": "SHIP-2025-GLULAM-045-01",
+      "ktddecv:hasShipmentPeriod": {
+        "@type": "ktddecv:PeriodOfTime",
+        "ktddecv:startDate": "2025-10-15",
+        "ktddecv:endDate": "2025-10-31"
+      },
+      "ktddecv:buyerParty": {
+        "@type": "ktddecv:Party",
+        "ktddecv:name": "Tokyo Timber Trading Co., Ltd.",
+        "ktddecv:partyAddress": {
+          "@type": "ktddecv:Address",
+          "ktddecv:cityName": "Chiyoda-ku",
+          "ktddecv:countryCode": "JP",
+          "ktddecv:postalZone": "100-0001",
+          "ktddecv:lineOne": "1-1 Marunouchi"
+        },
+        "ktddecv:partyIdentification": [
+          {
+            "@type": "ktddecv:Identifier",
+            "ktddecv:identificationScheme": "CorporateNumber",
+            "ktddecv:identifierValue": "0123456789012"
+          }
+        ]
+      },
+      "ktddecv:sellerParty": {
+        "@type": "ktddecv:Party",
+        "ktddecv:name": "FinnLam Oy",
+        "ktddecv:partyAddress": {
+          "@type": "ktddecv:Address",
+          "ktddecv:cityName": "Helsinki",
+          "ktddecv:countryCode": "FI",
+          "ktddecv:postalZone": "00180",
+          "ktddecv:lineOne": "Satamatie 12"
+        },
+        "ktddecv:partyIdentification": [
+          {
+            "@type": "ktddecv:Identifier",
+            "ktddecv:identificationScheme": "BusinessID",
+            "ktddecv:identifierValue": "1234567-8"
+          },
+          {
+            "@type": "ktddecv:Identifier",
+            "ktddecv:identificationScheme": "VAT",
+            "ktddecv:identifierValue": "FI12345678"
+          }
+        ]
+      },
+      "ktddecv:declaredCustomsValueAmount": {
+        "@type": "ktddecv:MonetaryAmount",
+        "ktddecv:amount": 38400000,
+        "ktddecv:currencyCode": "JPY"
+      },
+      "ktddecv:insuranceValueAmount": {
+        "@type": "ktddecv:MonetaryAmount",
+        "ktddecv:amount": 42240000,
+        "ktddecv:currencyCode": "JPY"
+      },
+      "ktddecv:totalGoodsItemQuantity": 2,
+      "ktddecv:totalTransportHandlingUnitQuantity": 4,
+      "ktddecv:invoiceDocument": {
+        "@type": "ktddecv:Document",
+        "ktddecv:documentIdentifier": "INV-2025-091",
+        "ktddecv:documentDate": "2025-10-20"
+      },
+      "ktddecv:hasGoodsItem": [
+        {
+          "@type": "ktddecv:GoodsItem",
+          "ktddecv:descriptionOfGoodsText": "Glued laminated timber beams, GL30c, planed",
+          "ktddecv:itemDescriptionText": "Beams 120x600mm, length 12m",
+          "ktddecv:productIdentifier": "GL30C-120x600x12000",
+          "ktddecv:hasCountryOfOrigin": {
+            "@type": "ktddecv:Country",
+            "ktddecv:countryCode": "FI",
+            "ktddecv:countryName": "Finland"
+          },
+          "ktddecv:appliedCommodityClassification": {
+            "@type": "ktddecv:CommodityClassification",
+            "ktddecv:itemClassificationCode": "4418.99"
+          },
+          "ktddecv:hasQuantity": {
+            "ktddecv:value": 80,
+            "ktddecv:unitCode": "NAR"
+          }
+        },
+        {
+          "@type": "ktddecv:GoodsItem",
+          "ktddecv:descriptionOfGoodsText": "Glued laminated timber panels, untreated",
+          "ktddecv:itemDescriptionText": "Panels 40x1220mm, length 4m",
+          "ktddecv:productIdentifier": "GL-PANEL-40x1220x4000",
+          "ktddecv:hasCountryOfOrigin": {
+            "@type": "ktddecv:Country",
+            "ktddecv:countryCode": "FI",
+            "ktddecv:countryName": "Finland"
+          },
+          "ktddecv:appliedCommodityClassification": {
+            "@type": "ktddecv:CommodityClassification",
+            "ktddecv:itemClassificationCode": "4418.75"
+          },
+          "ktddecv:hasQuantity": {
+            "ktddecv:value": 200,
+            "ktddecv:unitCode": "NAR"
+          }
+        }
+      ],
+      "ktddecv:deliveryTerms": {
+        "@type": "ktddecv:TradeDeliveryTerms",
+        "ktddecv:placeOfDischarge": {
+          "@type": "ktddecv:Location",
+          "ktddecv:description": "Yokohama Port",
+          "ktddecv:locationCountry": {
+            "@type": "ktddecv:Country",
+            "ktddecv:countryCode": "JP"
+          },
+          "ktddecv:unlocode": "JPYOK",
+          "ktddecv:alternateName": "Yokohama"
+        },
+        "ktddecv:placeOfDelivery": {
+          "@type": "ktddecv:Location",
+          "ktddecv:description": "Tokyo, warehouse of Tokyo Timber",
+          "ktddecv:locationCountry": {
+            "@type": "ktddecv:Country",
+            "ktddecv:countryCode": "JP"
+          },
+          "ktddecv:alternateName": "Tokyo"
+        }
+      }
+    }
+  ],
+  "ktddecv:requiredDocument": [
+    {
+      "@type": "ktddecv:Document",
+      "ktddecv:documentTypeCode": "380",
+      "ktddecv:description": "Commercial Invoice"
+    },
+    {
+      "@type": "ktddecv:Document",
+      "ktddecv:documentTypeCode": "PK",
+      "ktddecv:description": "Packing List"
+    },
+    {
+      "@type": "ktddecv:Document",
+      "ktddecv:documentTypeCode": "705",
+      "ktddecv:description": "Bill of Lading – to order of MUFG Bank"
+    },
+    {
+      "@type": "ktddecv:Document",
+      "ktddecv:documentTypeCode": "530",
+      "ktddecv:description": "Certificate of Origin (EU-Japan EPA)"
+    },
+    {
+      "@type": "ktddecv:Document",
+      "ktddecv:documentTypeCode": "560",
+      "ktddecv:description": "Insurance Policy/Certificate (ICC A, War & Strikes), 110% of invoice"
+    },
+    {
+      "@type": "ktddecv:Document",
+      "ktddecv:documentTypeCode": "371",
+      "ktddecv:description": "Phytosanitary Certificate"
+    },
+    {
+      "@type": "ktddecv:Document",
+      "ktddecv:documentTypeCode": "909",
+      "ktddecv:description": "EN 14080 Conformity/Quality Certificate"
+    }
+  ],
+  "ktddecv:instructionToBank": {
+    "@type": "ktddecv:BankInstruction",
+    "ktddecv:instructionText": "All documents must state L/C number LC-2025-000123. B/L: to order of MUFG Bank, Ltd.; notify Tokyo Timber Trading Co., Ltd."
+  },
+  "ktddecv:hasPaymentTerms": {
+    "@type": "ktddecv:PaymentTerms",
+    "ktddecv:note": "Payment at sight against compliant documents. Discrepancy fee JPY 15,000 borne by beneficiary."
+  },
+  "ktddecv:partialShipmentAllowed": false,
+  "ktddecv:placeOfExpiry": {
+    "@type": "ktddecv:Location",
+    "ktddecv:description": "Yokohama customs area",
+    "ktddecv:locationCountry": {
+      "@type": "ktddecv:Country",
+      "ktddecv:countryCode": "JP"
+    },
+    "ktddecv:unlocode": "JPYOK",
+    "ktddecv:alternateName": "Yokohama"
+  },
+  "ktddecv:confirmationInstructionCode": {
+    "@type": "skos:Concept",
+    "skos:prefLabel": {
+      "@language": "en",
+      "@value": "Confirmation required"
+    }
+  },
+  "ktddecv:requestedConfirmationParty": {
+    "@type": "ktddecv:Party",
+    "ktddecv:name": "Nordea Bank Abp",
+    "ktddecv:partyIdentification": [
+      {
+        "@type": "ktddecv:Identifier",
+        "ktddecv:identifierValue": "NDEAFIHH",
+        "ktddecv:identificationScheme": "BIC"
+      }
+    ]
+  },
+  "ktddecv:confirmingParty": {
+    "@type": "ktddecv:Party",
+    "ktddecv:name": "Nordea Bank Abp",
+    "ktddecv:partyIdentification": [
+      {
+        "@type": "ktddecv:Identifier",
+        "ktddecv:identifierValue": "NDEAFIHH",
+        "ktddecv:identificationScheme": "BIC"
+      }
+    ]
+  },
+  "ktddecv:creditAmountTolerancePercentage": 10.0,
+  "ktddecv:latestPresentationDate": "2025-12-05",
+  "ktddecv:hasPresentationPeriod": {
+    "@type": "ktddecv:PeriodOfTime",
+    "ktddecv:startDate": "2025-10-01",
+    "ktddecv:endDate": "2025-11-21"
+  },
+  "ktddecv:hasPaymentLine": [
+    {
+      "@type": "ktddecv:PaymentLine",
+      "ktddecv:hasAmount": {
+        "@type": "ktddecv:MonetaryAmount",
+        "ktddecv:amount": 58400000,
+        "ktddecv:currencyCode": "JPY"
+      },
+      "ktddecv:paymentSettlementMethod": "Payment at sight",
+      "ktddecv:tenor": "Sight",
+      "ktddecv:paymentDueDate": "2025-11-21",
+      "ktddecv:payeeParty": "FinnLam Oy"
+    }
+  ],
+  "ktddecv:requiresDocument": [
+    {
+      "@type": "ktddecv:DocumentRequirement",
+      "ktddecv:requiredDocumentType": {
+        "@type": "skos:Concept",
+        "skos:prefLabel": {
+          "@language": "en",
+          "@value": "Commercial Invoice (380)"
+        }
+      },
+      "ktddecv:numberOfOriginals": 1,
+      "ktddecv:numberOfCopies": 2
+    },
+    {
+      "@type": "ktddecv:DocumentRequirement",
+      "ktddecv:requiredDocumentType": {
+        "@type": "skos:Concept",
+        "skos:prefLabel": {
+          "@language": "en",
+          "@value": "Packing List (PK)"
+        }
+      },
+      "ktddecv:numberOfOriginals": 1,
+      "ktddecv:numberOfCopies": 2
+    },
+    {
+      "@type": "ktddecv:DocumentRequirement",
+      "ktddecv:requiredDocumentType": {
+        "@type": "skos:Concept",
+        "skos:prefLabel": {
+          "@language": "en",
+          "@value": "Bill of Lading – to order of MUFG Bank (705)"
+        }
+      },
+      "ktddecv:numberOfOriginals": 3,
+      "ktddecv:numberOfCopies": 3
+    },
+    {
+      "@type": "ktddecv:DocumentRequirement",
+      "ktddecv:requiredDocumentType": {
+        "@type": "skos:Concept",
+        "skos:prefLabel": {
+          "@language": "en",
+          "@value": "Certificate of Origin (EU-Japan EPA) (530)"
+        }
+      },
+      "ktddecv:numberOfOriginals": 1,
+      "ktddecv:numberOfCopies": 1
+    },
+    {
+      "@type": "ktddecv:DocumentRequirement",
+      "ktddecv:requiredDocumentType": {
+        "@type": "skos:Concept",
+        "skos:prefLabel": {
+          "@language": "en",
+          "@value": "Insurance Policy/Certificate (ICC A, War & Strikes) 110% (560)"
+        }
+      },
+      "ktddecv:numberOfOriginals": 1,
+      "ktddecv:numberOfCopies": 1
+    },
+    {
+      "@type": "ktddecv:DocumentRequirement",
+      "ktddecv:requiredDocumentType": {
+        "@type": "skos:Concept",
+        "skos:prefLabel": {
+          "@language": "en",
+          "@value": "Phytosanitary Certificate (371)"
+        }
+      },
+      "ktddecv:numberOfOriginals": 1,
+      "ktddecv:numberOfCopies": 1
+    },
+    {
+      "@type": "ktddecv:DocumentRequirement",
+      "ktddecv:requiredDocumentType": {
+        "@type": "skos:Concept",
+        "skos:prefLabel": {
+          "@language": "en",
+          "@value": "EN 14080 Conformity/Quality Certificate (909)"
+        }
+      },
+      "ktddecv:numberOfOriginals": 1,
+      "ktddecv:numberOfCopies": 1
+    }
+  ]
+}

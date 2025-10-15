@@ -1,0 +1,143 @@
+{
+  "@context": {
+    "ktddecv": "https://iri.suomi.fi/model/ktddecv/0.0.4/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "type": ["VerifiableCredential", "ktddecv:DocumentaryCredit"],
+  "id": "urn:uuid:LC-2025-000123",
+  "issuer": "https://nordea.fi/organization/issuer",
+  "issuanceDate": "2025-09-30",
+  "credentialSubject": {
+    "ktddecv:creditIdentifier": "LC-2025-000123",
+    "ktddecv:documentDate": "2025-09-30",
+    "ktddecv:expiryDate": "2025-12-31",
+    "ktddecv:latestShipmentDate": "2025-11-15",
+    "ktddecv:documentaryCreditTypeCode": "IRREVOCABLE",
+    "ktddecv:confirmationInstructionCode": "CONFIRM",
+    "ktddecv:confirmationAddedDate": "2025-09-30",
+    "ktddecv:partialShipmentAllowed": false,
+    "ktddecv:transshipmentAllowed": true,
+    "ktddecv:presentationPeriodDays": 21,
+    "ktddecv:hasPresentationPeriod": {
+      "ktddecv:startDate": "2025-09-30",
+      "ktddecv:endDate": "2025-12-21"
+    },
+    "ktddecv:latestPresentationDate": "2025-12-21",
+    "ktddecv:placeOfExpiry": {"ktddecv:name": "Tokyo, Japan", "ktddecv:identifier": "JPTYO"},
+    "ktddecv:placeOfPresentation": {"ktddecv:name": "Mitsui Bank Ltd., Tokyo", "ktddecv:identifier": "JP-TOKYO-MITSUI-MARUNOUCHI"},
+    "ktddecv:applicantParty": {
+      "ktddecv:name": "Tokyo Builders Ltd.",
+      "ktddecv:partyAddress": {
+        "ktddecv:streetName": "Marunouchi 2-17-1",
+        "ktddecv:cityName": "Chiyoda-ku",
+        "ktddecv:postalZone": "100-0005",
+        "ktddecv:countryCode": "JP"
+      },
+      "ktddecv:partyIdentifier": [
+        {"ktddecv:schemeName": "EUID", "ktddecv:identifierValue": "JP-TBLDRS-2025-0001"},
+        {"ktddecv:schemeName": "LEI",  "ktddecv:identifierValue": "5493001KJTIIGC8Y1R12"}
+      ]
+    },
+    "ktddecv:beneficiaryParty": {
+      "ktddecv:name": "FinnLam Oy",
+      "ktddecv:partyAddress": {
+        "ktddecv:streetName": "Puusepänkatu 12",
+        "ktddecv:cityName": "Jyväskylä",
+        "ktddecv:postalZone": "40520",
+        "ktddecv:countryCode": "FI"
+      },
+      "ktddecv:partyIdentifier": [
+        {"ktddecv:schemeName": "EUID", "ktddecv:identifierValue": "FI-1234567-8"},
+        {"ktddecv:schemeName": "LEI",  "ktddecv:identifierValue": "743700T6Y2Q7Z5Q9QZ11"}
+      ]
+    },
+    "ktddecv:issuingBankParty": {"ktddecv:name": "Nordea Bank Finland Plc", "ktddecv:partyIdentifier": [{"ktddecv:schemeName": "BIC", "ktddecv:identifierValue": "NDEAFIHH"}]},
+    "ktddecv:advisingBankParty": {"ktddecv:name": "Mitsui Bank Ltd., Tokyo", "ktddecv:partyIdentifier": [{"ktddecv:schemeName": "BIC", "ktddecv:identifierValue": "MITSJPJT"}]},
+    "ktddecv:confirmingParty": {"ktddecv:name": "Mitsui Bank Ltd., Tokyo"},
+    "ktddecv:requestedConfirmationParty": {"ktddecv:name": "Mitsui Bank Ltd., Tokyo"},
+    "ktddecv:reimbursingBankParty": {"ktddecv:name": "Nordea Bank Finland Plc"},
+    "ktddecv:adviseThroughBankParty": {"ktddecv:name": "Mitsui Bank Ltd., Tokyo"},
+    "ktddecv:applicantBankParty": {"ktddecv:name": "Mitsui Bank Ltd., Tokyo"},
+
+    "ktddecv:hasCreditAvailability": {
+      "ktddecv:tenor": "AT SIGHT",
+      "ktddecv:maturityDate": "2025-12-21",
+      "ktddecv:draweeParty": {"ktddecv:name": "Mitsui Bank Ltd., Tokyo"},
+      "ktddecv:availableWithParty": {"ktddecv:name": "Mitsui Bank Ltd., Tokyo"},
+      "ktddecv:availableAtPlace": {"ktddecv:name": "Tokyo, Japan", "ktddecv:identifier": "JPTYO"},
+      "ktddecv:hasAmount": {"ktddecv:value": 250000, "ktddecv:currencyCode": "EUR"}
+    },
+
+    "ktddecv:maximumCreditAmount": {"ktddecv:value": 250000, "ktddecv:currencyCode": "EUR"},
+    "ktddecv:creditAmountTolerancePercentage": 10.0,
+
+    "ktddecv:hasPaymentTerms": {
+      "ktddecv:paymentTermCode": "LC",
+      "ktddecv:tenor": "AT SIGHT",
+      "ktddecv:tenorPeriod": {"ktddecv:startDate": "2025-09-30", "ktddecv:endDate": "2025-12-21"},
+      "ktddecv:hasPaymentScheduleLine": [
+        {
+          "ktddecv:hasAmount": {"ktddecv:value": 250000, "ktddecv:currencyCode": "EUR"},
+          "ktddecv:paymentDueDate": "2025-12-21",
+          "ktddecv:payeeParty": {"ktddecv:name": "FinnLam Oy"},
+          "ktddecv:tenor": "AT SIGHT"
+        }
+      ]
+    },
+
+    "ktddecv:hasPaymentLine": [
+      {
+        "ktddecv:hasAmount": {"ktddecv:value": 250000, "ktddecv:currencyCode": "EUR"},
+        "ktddecv:paymentSettlementMethod": "BANK_PAYMENT",
+        "ktddecv:paymentDueDate": "2025-12-21",
+        "ktddecv:payeeParty": {"ktddecv:name": "FinnLam Oy"},
+        "ktddecv:tenor": "AT SIGHT"
+      }
+    ],
+
+    "ktddecv:requiresDocument": [
+      {"ktddecv:documentTypeCode": "COMMERCIAL_INVOICE", "ktddecv:numberOfCopies": 1},
+      {"ktddecv:documentTypeCode": "PACKING_LIST", "ktddecv:numberOfCopies": 1},
+      {"ktddecv:documentTypeCode": "CERTIFICATE_OF_ORIGIN", "ktddecv:numberOfCopies": 1},
+      {"ktddecv:documentTypeCode": "INSURANCE_POLICY", "ktddecv:numberOfCopies": 1},
+      {"ktddecv:documentTypeCode": "TRANSPORT_DOCUMENT", "ktddecv:numberOfCopies": 1}
+    ],
+
+    "ktddecv:hasShipment": {
+      "ktddecv:sellerParty": {"ktddecv:name": "FinnLam Oy"},
+      "ktddecv:buyerParty": {"ktddecv:name": "Tokyo Builders Ltd."},
+      "ktddecv:applicableRules": {"ktddecv:ruleSetName": "UCP 600 (ICC)"},
+      "ktddecv:incotermsCode": "CIF",
+      "ktddecv:placeOfLoading": {"ktddecv:name": "Port of Helsinki", "ktddecv:identifier": "FIHEL"},
+      "ktddecv:placeOfDischarge": {"ktddecv:name": "Port of Tokyo", "ktddecv:identifier": "JPTYO"},
+      "ktddecv:hasDeliveryPeriod": {"ktddecv:startDate": "2025-10-15", "ktddecv:endDate": "2025-11-15"},
+      "ktddecv:includesAllowanceCharge": [
+        {"ktddecv:allowanceChargeReasonCode": "FREIGHT", "ktddecv:chargeIndicator": true,
+         "ktddecv:amount": {"ktddecv:value": 4200, "ktddecv:currencyCode": "EUR"}},
+        {"ktddecv:allowanceChargeReasonCode": "INSURANCE", "ktddecv:chargeIndicator": true,
+         "ktddecv:amount": {"ktddecv:value": 900, "ktddecv:currencyCode": "EUR"}}
+      ],
+      "ktddecv:hasGoodsItem": [
+        {
+          "ktddecv:goodsDescription": "Glued laminated timber beams, spruce, planed",
+          "ktddecv:quantity": "12 m³",
+          "ktddecv:netWeightMeasure": "9600 kg",
+          "ktddecv:classificationCode": "HS 4418.99"
+        }
+      ]
+    },
+
+    "ktddecv:coversAdditionalCharge": [
+      {"ktddecv:allowanceChargeReasonCode": "BANK_CHARGES", "ktddecv:chargeIndicator": true,
+       "ktddecv:amount": {"ktddecv:value": 350, "ktddecv:currencyCode": "EUR"}}
+    ],
+
+    "ktddecv:AdditionalConditionsText": "All documents must state LC number LC-2025-000123 and show Consignee: Tokyo Builders Ltd.",
+    "ktddecv:instructionToBank": {"ktddecv:instructionText": "Advise by authenticated SWIFT; release documents against payment at sight."},
+
+    "ktddecv:relatedPurchaseOrder": "PO-2025-00077",
+    "ktddecv:relatedInvoice": "INV-2025-00077",
+    "ktddecv:relatedTransportDocument": "SWB-2025-00231",
+    "ktddecv:certificateOfOriginReference": "CO-FIN-2025-A321"
+  }
+}

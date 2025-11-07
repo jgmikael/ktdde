@@ -1,0 +1,74 @@
+{
+  "@context": "/mnt/data/co-context-full.jsonld",
+  "id": "urn:uuid:co-EXT-0001",
+  "type": [
+    "CertificateOfOrigin",
+    "Document"
+  ],
+  "certificateNumber": "FI-CO-2025-000789",
+  "issueDate": "2025-11-07",
+  "issuingAuthority": {
+    "id": "urn:org:helsinki-chamber",
+    "type": "LegalEntity",
+    "name": "Helsinki Region Chamber of Commerce"
+  },
+  "exporterParty": {
+    "id": "urn:party:nordic-wood-oy",
+    "type": "Party",
+    "name": "Nordic Wood Oy"
+  },
+  "consigneeParty": {
+    "id": "urn:party:tokyo-builders-kk",
+    "type": "Party",
+    "name": "Tokyo Builders KK"
+  },
+  "coversGoodsItem": [
+    {
+      "id": "urn:goods:1",
+      "type": "GoodsItem",
+      "description": "Finnish glued laminated timber beams (gluelam), structural grade",
+      "classificationCode": "4418.99"
+    }
+  ],
+  "hasOriginDetermination": {
+    "id": "urn:det:1",
+    "type": "OriginDetermination",
+    "originCountry": {
+      "id": "urn:country:FI",
+      "type": "Country",
+      "name": "Finland"
+    },
+    "originCriteria": "LST",
+    "ruleReference": "Section 2: last substantial transformation; Section 3: minimal operations check",
+    "originRationale": "Processing in Finland yields new product properties and functionality; economically justified; not minimal.",
+    "determinesForItem": "urn:goods:1",
+    "isMinimalOperation": false,
+    "appliesSpecialCase": [
+      {
+        "id": "urn:sc:mp",
+        "type": "SpecialCaseApplication",
+        "portionBasis": "Value",
+        "hasPortion": [
+          {
+            "id": "urn:portion:FI",
+            "type": "Portion",
+            "portionCountryCode": "FI",
+            "portionValue": 0.72
+          },
+          {
+            "id": "urn:portion:SE",
+            "type": "Portion",
+            "portionCountryCode": "SE",
+            "portionValue": 0.18
+          },
+          {
+            "id": "urn:portion:EE",
+            "type": "Portion",
+            "portionCountryCode": "EE",
+            "portionValue": 0.1
+          }
+        ]
+      }
+    ]
+  }
+}
